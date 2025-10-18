@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">Book Store - Sua Livraria Online</title>
+    
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Book Store</div>
+        <nav class="main-nav">
+            <button id="menu-button" class="menu-icon"><i class="fas fa-bars"></i></button>
+            
+            <a href="#vitrine" data-i18n="nav.books" class="desktop-link header-nav-link">Livros</a>
+            
+            <a href="#cadastro" data-i18n="nav.login" class="desktop-link header-login-btn">Login/Cadastro</a>
+
+            <button id="cart-button" class="cart-icon"><i class="fas fa-shopping-cart"></i> (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+    
+    <aside id="category-drawer" class="category-drawer">
+        <button id="close-menu" class="close-btn">&times;</button>
+        <h3 data-i18n="menu.categories_title">Categorias</h3>
+        <ul id="category-list" class="category-list">
+            </ul>
+        <div class="drawer-links">
+             <a href="#cadastro" data-i18n="nav.login">Login/Cadastro</a>
+             <a href="#vitrine" data-i18n="nav.books">Ver Livros</a>
+        </div>
+    </aside>
+
+
+    <section id="promo-banner" class="promo-banner">
+        </section>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero.headline" class="fancy-title">Descubra o Próximo Capítulo da Sua Vida</h1>
+            <p data-i18n="hero.tagline">Os melhores títulos, com preços imbatíveis.</p>
+            <a href="#vitrine" class="btn primary-btn" data-i18n="hero.button">Ver Livros</a>
+        </div>
+    </section>
+
+    <section id="vitrine" class="vitrine">
+        <h2 data-i18n="section.featured">Nossos Livros em Destaque</h2>
+        
+        <div class="filter-buttons" id="filter-buttons">
+            </div>
+        
+        <div class="products-grid" id="products-grid">
+            </div>
+    </section>
+
+    <section id="cadastro" class="cadastro">
+        <h2 data-i18n="section.access">Acesso Rápido</h2>
+        <div class="form-container">
+            <form>
+                <input type="email" data-i18n-placeholder="form.email" placeholder="E-mail" required>
+                <input type="password" data-i18n-placeholder="form.password" placeholder="Senha" required>
+                <button type="submit" class="btn primary-btn" data-i18n="form.loginBtn">Entrar</button>
+                <a href="#" data-i18n="form.create">Criar Conta</a>
+            </form>
+        </div>
+    </section>
+
+    <aside id="cart-drawer" class="cart-drawer">
+        <button id="close-cart" class="close-btn">&times;</button>
+        <h3 data-i18n="cart.title">Seu Carrinho (<span id="drawer-count">0</span>)</h3>
+        <div id="cart-items-list" class="cart-items-list">
+            <p class="empty-cart-message" data-i18n="cart.empty">Seu carrinho está vazio.</p>
+        </div>
+        <div class="cart-summary">
+            <p data-i18n="cart.total">Total: <span id="cart-total">R$ 0,00</span></p>
+            <button id="checkout-btn" class="btn primary-btn" disabled data-i18n="cart.checkout">Fechar Compra</button>
+        </div>
+    </aside>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3 data-i18n="footer.brand">Book Store</h3>
+                <p data-i18n="footer.mission">Nossa missão é conectar leitores e histórias, oferecendo os melhores títulos com a comodidade do online.</p>
+            </div>
+            
+            <div class="footer-section links">
+                <h3 data-i18n="footer.linksTitle">Links Úteis</h3>
+                <ul>
+                    <li><a href="#" data-i18n="footer.privacy">Política de Privacidade</a></li>
+                    <li><a href="#" data-i18n="footer.terms">Termos de Uso</a></li>
+                    <li><a href="#" data-i18n="footer.returns">Trocas e Devoluções</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section contact">
+                <h3 data-i18n="footer.devTitle">Desenvolvimento</h3>
+                <div class="dev-info">
+                    <p data-i18n="footer.devName">Projeto de: **Gabriel Cardoso**</p>
+                    <a href="SEU_LINK_DO_LINKEDIN" target="_blank" class="linkedin-link" data-i18n="footer.linkedin">
+                        <i class="fab fa-linkedin"></i> Perfil LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p data-i18n="footer.copy">&copy; 2025 Book Store. Todos os direitos reservados. | Desenvolvido com <i class="fas fa-heart"></i></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
