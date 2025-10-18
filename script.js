@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             'footer.terms': 'Terms of Use',
             'footer.returns': 'Exchanges and Returns',
             'footer.devTitle': 'Development',
-            'footer.devName': 'Project by: **Gabriel Cardoos**',
+            'footer.devName': 'Project by: **Gabriel Cardoso**',
             'footer.linkedin': 'LinkedIn Profile',
             'footer.copy': '&copy; 2025 Book Store. All rights reserved. | Developed with <i class="fas fa-heart"></i>',
             'product.add_to_cart': 'Add to Cart',
@@ -417,4 +417,5 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProducts(); 
     renderCart();
     displayRandomPromotion();
+
 });
